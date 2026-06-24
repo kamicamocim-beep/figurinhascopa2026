@@ -1,2 +1,358 @@
 # Packdeck
-Pack de figurinhas 
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seu Produto Digital</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin:0;
+font-family:Arial, sans-serif;
+  background-color: #87CEEB; /* Azul claro */;
+    background-image: url('https://img.criativodahora.com.br/v2/thumbs/2026/04/17/fundo-brasil-verde-amarelo-abstrato-copa-do-mundo-futebol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+color:#222;
+
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url('banner.jpg');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    max-width:800px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff4d4d;
+    color:white;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.section{
+    text-align:center;
+background-color: rgba(255, 255, 255, 0.8); /* branco com 80% de transparência */
+	padding:25px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.testimonial{
+    background:white;
+	text-align:left;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.offer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.price-old{
+    text-decoration:line-through;
+    color:#ccc;
+    font-size:24px;
+}
+
+.price-new{
+    font-size:48px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#222;
+    color:white;
+}
+
+.countdown{
+    background:#ff0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#222}
+.hero{background:#111;color:#fff;text-align:center;padding:80px 20px}
+.btn{display:inline-block;background:#00c853;color:#fff;padding:15px 30px;text-decoration:none;border-radius:8px;font-weight:bold}
+.section{max-width:1100px;margin:auto;padding:60px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.offer{background:#111;color:#fff;text-align:center;padding:60px 20px}
+#countdown{font-size:28px;font-weight:bold}
+.faq-item{background:#fff;margin:10px 0;border-radius:8px;padding:15px}
+.answer{display:none;margin-top:10px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px;border-radius:50%;text-decoration:none}
+
+</style>
+</head>
+
+<body>
+
+<div class="countdown">
+🔥 OFERTA ESPECIAL POR TEMPO LIMITADO 🔥
+</div>
+
+<section class="hero">
+    <h1>Pack completo das figurinhas da Copa 2026
+</h1>
+    <p>
+        Chega de gastar fortunas com figurinhas caras e correndo o risco de sair repetidas. Economize muito imprimindo suas próprias figurinhas através deste pack em pdf de alta qualidade. <br><br>
+    </p>
+
+<div id="countdown"></div><br>
+
+    <a class="btn" href="#comprar">
+        QUERO COMPRAR AGORA
+    </a>
+</section>
+
+<section class="section">
+    <h2>Seu filho não para de pedir dinheiro para comprar figurinhas da Copa? 😩⚽</h2>
+	<h2>Pois seus problemas acabaram!</h2>
+    <div class="benefits">
+
+        <div class="card">
+            <h3>📚 Pack de Figurinhas Completo</h3>
+            <p>+ de 900 das 48 seleções e com extras para completar seu álbum.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Economia no bolso e diversão garantida</h3>
+            <p>Receba as figurinhas da Copa do Mundo 2026 em PDF, sem repetidas e com qualidade. 🏆📄.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Complete sua coleção</h3>
+            <p>Você recebe todo o material de uma única vez, para imprimir, recortar e colar quando quiser.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Garanta agora seu Pack</h3>
+            <p>Praticidade e economia, gantindo um álbum cheio para mostrar aos amigos.</p>
+        </div>
+
+    </div>
+
+<script>
+const end = new Date();
+end.setMinutes(end.getMinutes() + 24);
+
+setInterval(() => {
+    const d = end - new Date();
+
+    if (d <= 0) {
+        document.getElementById('countdown').innerText = 'Oferta últimos momentos!';
+        return;
+    }
+
+    const m = Math.floor(d / 1000 / 60);
+    const s = Math.floor(d / 1000) % 60;
+
+    document.getElementById('countdown').innerText =
+        `Oferta termina em ${m}m ${s}s`;
+}, 1000);
+
+function toggleFaq(el) {
+    const a = el.nextElementSibling;
+    a.style.display = a.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+
+</section>
+
+<section class="section">
+    <h2>Veja o Material</h2>
+
+    <div class="gallery">
+        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0025(1).jpg">
+	<img src="https://ik.imagekit.io/epofiosvp/shopping.webp">
+        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0027(1).jpg">
+        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0029(1).jpg">
+	<img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0026(1).jpg">
+        <img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162011.png">
+        <img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162227.png">
+	<img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162055.png">
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Como Funciona</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>1° Passo</h3>
+            <p>Clique em Comprar para garantir seu pack de figurinhas agora.</p>
+        </div>
+
+        <div class="step">
+            <h3>2° Passo</h3>
+            <p>Realize o pagamento de forma simples e rápida através do Pix, onde voce pode conferir de forma segura o valor pago.</p>
+        </div>
+
+        <div class="step">
+            <h3>3° Passo</h3>
+            <p>Receba o acesso ao material em seu e-mail cadastrado ou pelo whatsapp automaticamente após o pagamento.</p>
+        </div>
+
+        <div class="step">
+            <h3>4° Passo</h3>
+            <p>Imprimir suas figurinhas perfeitamente no papel glossy (adesivo) e configurando a impressora para o tipo de mídia Papel Fotográfico/Glossy, qualidade Alta e tamanho/escala real.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>O que voce vai receber no Pack de Figurinhas da Copa 2026</h2>
+
+    <div class="testimonial">
+        ⭐⭐⭐⭐⭐
+        + de 900 figurinhas com as 48 seleções da Copa 2026 em pdf de alta qualidade, prontas para imprimir.
+    </div>
+
+    <div class="testimonial">
+        ⭐Bônus 1: ⭐
+        Figurinhas extras especiais: da Coca-Cola, douradas, do Neymar e de jogadores que entraram por último nas 48 seleções.
+    </div>
+
+    <div class="testimonial">
+        ⭐Bônus 2:⭐
+        Mapa de Figurinhas para marcar e ter o controle do que voce tem a mais e o que ainda falta.
+    </div>
+
+    <div class="testimonial">
+        ⭐Bônus 3:⭐
+        Planilha Excel da Tabela dos jogos da Copa 2026 e tabelas em jpg e pdf.
+    </div>
+
+    <div class="testimonial">
+        ⭐Bônus 4:⭐
+        30 Códigos promocionais da Copa do Mundo Panini 2026 para o álbum virtual. Digite os códigos no app oficial da copa 2026 da Panini e ganhe envelopes digitais com cards exclusivos e complete seu álbum digital.
+
+    </div>
+
+   
+
+
+
+</section>
+
+<section class="offer" id="comprar">
+
+    <h2>Oferta Especial</h2>
+
+    <p class="price-old">De R$ 67,00</p>
+
+    <p class="price-new">R$ 10,00</p>
+
+    <br>
+
+    <a class="btn" href="SEU_LINK_DE_CHECKOUT">
+        COMPRAR AGORA
+    </a>
+
+    <p style="margin-top:20px">
+        Pagamento seguro via Pix e acesso imediato.
+    </p>
+
+</section>
+
+<footer>
+    © 2026 - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
+```
+
