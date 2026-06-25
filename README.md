@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seu Produto Digital</title>
+<title>Pack completo das figurinhas da Copa 2026</title>
+<meta name="description" content="Pack completo das figurinhas da Copa 2026 em PDF para imprimir. Mais de 900 figurinhas e bônus exclusivos.">
 
 <style>
 *{
@@ -158,6 +159,30 @@ footer{
     font-size:22px;
     font-weight:bold;
 }
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.price-new{
+    font-size:38px;
+}
+
+.section h2{
+    font-size:28px;
+}
+
+}
+
+</style>
+
+
 <style>
 body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#222}
 .hero{background:#111;color:#fff;text-align:center;padding:80px 20px}
@@ -216,20 +241,38 @@ body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;color:#222}
 
         <div class="card">
             <h3>📱 Garanta agora seu Pack</h3>
-            <p>Praticidade e economia, gantindo um álbum cheio para mostrar aos amigos.</p>
+            <p>Praticidade e economia, garantindo um álbum cheio para mostrar aos amigos.</p>
         </div>
 
     </div>
 
 <script>
-const end = new Date();
-end.setMinutes(end.getMinutes() + 24);
+
+// Verifica se já existe um horário final salvo
+let end = localStorage.getItem('ofertaFim');
+
+if (!end) {
+    const dataFinal = new Date();
+    dataFinal.setMinutes(dataFinal.getMinutes() + 24);
+
+    end = dataFinal.getTime();
+
+    localStorage.setItem('ofertaFim', end);
+}
+
+end = Number(end);
 
 setInterval(() => {
-    const d = end - new Date();
+
+    const d = end - Date.now();
 
     if (d <= 0) {
-        document.getElementById('countdown').innerText = 'Oferta últimos momentos!';
+
+        document.getElementById('countdown').innerText =
+        'Oferta encerrada!';
+
+        localStorage.removeItem('ofertaFim');
+
         return;
     }
 
@@ -237,13 +280,10 @@ setInterval(() => {
     const s = Math.floor(d / 1000) % 60;
 
     document.getElementById('countdown').innerText =
-        `Oferta termina em ${m}m ${s}s`;
+    `Oferta termina em ${m}m ${s}s`;
+
 }, 1000);
 
-function toggleFaq(el) {
-    const a = el.nextElementSibling;
-    a.style.display = a.style.display === 'block' ? 'none' : 'block';
-}
 </script>
 
 
@@ -253,16 +293,24 @@ function toggleFaq(el) {
     <h2>Veja o Material</h2>
 
     <div class="gallery">
-        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0025(1).jpg">
-	<img src="https://ik.imagekit.io/epofiosvp/shopping.webp">
-        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0027(1).jpg">
-        <img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0029(1).jpg">
-	<img src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0026(1).jpg">
-        <img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162011.png">
-        <img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162227.png">
-	<img src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162055.png">
+        <img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0025(1).jpg">
+	<img loading="lazy" src="https://ik.imagekit.io/epofiosvp/shopping.webp">
+        <img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0027(1).jpg">
+        <img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0029(1).jpg">
+	<img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG-20260622-WA0026(1).jpg">
+        <img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162011.png">
+        <img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162227.png">
+	<img loading="lazy" src="https://ik.imagekit.io/epofiosvp/IMG_20260622_162055.png">
 
     </div>
+
+<div style="text-align:center;">
+    <a class="btn" href="#comprar">
+        ADIQUIRA JÁ
+    </a>
+</div>
+
+
 </section>
 
 <section class="section">
@@ -277,7 +325,7 @@ function toggleFaq(el) {
 
         <div class="step">
             <h3>2° Passo</h3>
-            <p>Realize o pagamento de forma simples e rápida através do Pix, onde voce pode conferir de forma segura o valor pago.</p>
+            <p>Realize o pagamento de forma simples e rápida através do Pix, onde você pode conferir de forma segura o valor pago.</p>
         </div>
 
         <div class="step">
@@ -294,7 +342,7 @@ function toggleFaq(el) {
 </section>
 
 <section class="section">
-    <h2>O que voce vai receber no Pack de Figurinhas da Copa 2026</h2>
+    <h2>O que você vai receber no Pack de Figurinhas da Copa 2026</h2>
 
     <div class="testimonial">
         ⭐⭐⭐⭐⭐
@@ -308,7 +356,7 @@ function toggleFaq(el) {
 
     <div class="testimonial">
         ⭐Bônus 2:⭐
-        Mapa de Figurinhas para marcar e ter o controle do que voce tem a mais e o que ainda falta.
+        Mapa de Figurinhas para marcar e ter o controle do que você tem a mais e o que ainda falta.
     </div>
 
     <div class="testimonial">
@@ -355,4 +403,5 @@ function toggleFaq(el) {
 </body>
 </html>
 ```
+
 
